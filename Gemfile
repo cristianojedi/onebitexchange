@@ -4,6 +4,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.1'
 gem 'rspec-rails', '~> 3.5'
 
+# permite fazer chamadas rest dentro do app
+gem 'rest-client'
+# permite fingir que uma chamada está acontecendo e devolve uma resposta default,
+# desabilitando a internet, chamadas fake devolvendo dados mocados
+gem 'webmock'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
 # Use postgresql as the database for Active Record
