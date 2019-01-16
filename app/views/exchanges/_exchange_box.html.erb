@@ -17,9 +17,12 @@
             <input type='number' name='amount' id='amount' class='form-control' placeholder='Quantidade ($10)' step='any' required>
           </div>
 
-          <div class='form-group'>
-            <button type='button' id='change' class="btn btn-secondary btn-change col-md-12">INVERTER MOEDAS</button>
+          <div class='form-group text-sm-center'>
+            <%= link_to 'javascript:void(0)', id: 'change' do %>
+              <%= image_tag '/transfer.png', class: 'img-fluid', title: 'Inverter Moedas' %>
+            <% end %>
           </div>
+
         </div>
 
         <div class='destination_currency'>
@@ -31,9 +34,9 @@
             <input type='text' id='result' name='result' class='form-control' placeholder='Resultado' readonly>
           </div>
         </div>
-        <div>
+        <%# <div>
           <button type='submit' class='btn btn-primary btn-exchange col-md-12'>CONVERTER</button>
-        </div>
+        </div> %>
       <% end %>
     </div>
   </div>
