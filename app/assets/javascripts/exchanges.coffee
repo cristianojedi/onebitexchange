@@ -2,6 +2,8 @@ $(document).ready ->
 
   $body = $("body")
 
+  $("#div-convert").hide()
+
   $('#amount').keyup ->
       convert()
 
